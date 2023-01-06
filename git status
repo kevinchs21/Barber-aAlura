@@ -1,0 +1,337 @@
+[33mcommit b185880eae896485a1554b81ed9623665586c3e0[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m)[m
+Author: Kevin Chomba <kevin123795@gmail.com>
+Date:   Tue Jan 3 14:46:18 2023 -0500
+
+    segundo envio
+
+[1mdiff --git a/contacto.html b/contacto.html[m
+[1mindex 95aa478..e6ee989 100644[m
+[1m--- a/contacto.html[m
+[1m+++ b/contacto.html[m
+[36m@@ -2,8 +2,8 @@[m
+ <html lang="en">[m
+ <head>[m
+     <meta charset="UTF-8">[m
+[31m-    <!--meta http-equiv="X-UA-Compatible" content="IE=edge"-->[m
+[31m-    <!--meta name="viewport" content="width=device-width, initial-scale=1.0"-->[m
+[32m+[m[32m    <meta http-equiv="X-UA-Compatible" content="IE=edge">[m
+[32m+[m[32m    <meta name="viewport" content="width=device-width, initial-scale=1.0">[m
+     <title>Contáctanos</title>[m
+     <link rel="stylesheet" href="reset.css">[m
+     <link rel="stylesheet" href="style.css">[m
+
+[33mcommit eafe9381090aed5f87f1681787f503ed6e8b48ae[m
+Author: Kevin Chomba <kevin123795@gmail.com>
+Date:   Tue Jan 3 14:44:55 2023 -0500
+
+    primer envio
+
+[1mdiff --git a/banner/banner.jpg b/banner/banner.jpg[m
+[1mnew file mode 100644[m
+[1mindex 0000000..a5198bc[m
+Binary files /dev/null and b/banner/banner.jpg differ
+[1mdiff --git a/banner/desktop.ini b/banner/desktop.ini[m
+[1mnew file mode 100644[m
+[1mindex 0000000..bd28da3[m
+[1m--- /dev/null[m
+[1m+++ b/banner/desktop.ini[m
+[36m@@ -0,0 +1,5 @@[m
+[32m+[m[32m[.ShellClassInfo][m
+[32m+[m[32mInfoTip=Esta pasta est� compartilhada on-line.[m
+[32m+[m[32mIconFile=C:\Program Files\Google\Drive\googledrivesync.exe[m
+[32m+[m[32mIconIndex=16[m
+[32m+[m[41m    [m
+\ No newline at end of file[m
+[1mdiff --git a/contacto.html b/contacto.html[m
+[1mnew file mode 100644[m
+[1mindex 0000000..95aa478[m
+[1m--- /dev/null[m
+[1m+++ b/contacto.html[m
+[36m@@ -0,0 +1,96 @@[m
+[32m+[m[32m<!DOCTYPE html>[m
+[32m+[m[32m<html lang="en">[m
+[32m+[m[32m<head>[m
+[32m+[m[32m    <meta charset="UTF-8">[m
+[32m+[m[32m    <!--meta http-equiv="X-UA-Compatible" content="IE=edge"-->[m
+[32m+[m[32m    <!--meta name="viewport" content="width=device-width, initial-scale=1.0"-->[m
+[32m+[m[32m    <title>Contáctanos</title>[m
+[32m+[m[32m    <link rel="stylesheet" href="reset.css">[m
+[32m+[m[32m    <link rel="stylesheet" href="style.css">[m
+[32m+[m
+[32m+[m[32m</head>[m
+[32m+[m
+[32m+[m[32m<body>[m
+[32m+[m[32m    <header>[m
+[32m+[m[32m        <div class="caja">[m
+[32m+[m[32m            <h1><img src="imagenes/logo.png" alt ="Logo de la Barbería"></h1>[m
+[32m+[m[32m            <nav>[m
+[32m+[m[32m                <ul>[m
+[32m+[m[32m                    <li><a href="index.html">Home</a></li>[m
+[32m+[m[32m                    <li><a href="productos.html">Productos</a></li>[m
+[32m+[m[32m                    <li><a href="contacto.html">Contacto</a></li>[m
+[32m+[m[32m                </ul>[m
+[32m+[m[32m            </nav>[m
+[32m+[m[32m        </div>[m
+[32m+[m[32m    </header>[m
+[32m+[m
+[32m+[m[32m    <main>[m
+[32m+[m[32m        <form action="submit">[m
+[32m+[m[32m            <label >Nombre y Apellido</label>[m
+[32m+[m[32m            <input type="text" id="nombreyApellido" placeholder="Nombre y apellido" class="input-padron" required>[m
+[32m+[m
+[32m+[m[32m            <label >Email</label>[m
+[32m+[m[32m            <input type="email" id="email" placeholder="Ingrese correo electrónico" class="input-padron" required>[m
+[32m+[m
+[32m+[m[32m            <label >Teléfono</label>[m
+[32m+[m[32m            <input type="tel" id="telefono" placeholder="Ingrese teléfono" class="input-padron" required>[m
+[32m+[m
+[32m+[m[32m            <label >Mensaje</label>[m
+[32m+[m[32m            <textarea name="textarea" id="mensaje" cols="70" rows="10" placeholder="Ingrese su mensaje" class="input-padron"></textarea>[m
+[32m+[m[41m            [m
+[32m+[m[32m            <fieldset class="radio">[m
+[32m+[m[32m                <p>Como te gustaria que te contactemos</p>[m
+[32m+[m[32m                <label> <input type="radio" name="contacto" value="Email" id="">Email</label>[m
+[32m+[m[32m                <label> <input type="radio" name="contacto" value="Email" id="">Telefono</label>[m
+[32m+[m[32m                <label> <input type="radio" name="contacto" value="Email" id="" checked>Whatsapp</label>[m
+[32m+[m[41m                          [m
+[32m+[m[32m            </fieldset>[m
+[32m+[m
+[32m+[m
+[32m+[m[32m            <fieldset>[m
+[32m+[m[32m            <legend>En que horario prefiere ser atendido</legend>[m
+[32m+[m[41m                            [m
+[32m+[m[32m                <select name="" id="">[m
+[32m+[m[32m                    <option>Mañana</option>[m
+[32m+[m[32m                    <option>tarde</option>[m
+[32m+[m[32m                    <option>Noche</option>[m
+[32m+[m[32m                </select>[m
+[32m+[m[41m            [m
+[32m+[m[32m            </fieldset>[m
+[32m+[m[32m            <label class="checkbox"><input type="checkbox" checked> te gustaria recibir notificaciones</label>[m
+[32m+[m[32m            <input type="submit" value="Enviar formulario" class="enviar">[m
+[32m+[m
+[32m+[m
+[32m+[m[32m        </form>[m
+[32m+[m[32m        <table>[m
+[32m+[m[32m            <thead>[m
+[32m+[m[32m                <tr>[m
+[32m+[m[32m                    <th>Día</th>[m
+[32m+[m[32m                    <th>Horario</th>[m
+[32m+[m[32m                </tr>[m
+[32m+[m[32m            </thead>[m
+[32m+[m
+[32m+[m[32m        <tbody>[m
+[32m+[m[32m            <tr>[m
+[32m+[m[32m                <td>Lunes</td>[m
+[32m+[m[32m                <td>08h - 20h</td>[m
+[32m+[m[32m            </tr>[m
+[32m+[m[32m            <tr>[m
+[32m+[m[32m                <td>Miércoles</td>[m
+[32m+[m[32m                <td>08h - 20h</td>[m
+[32m+[m[32m            </tr>[m
+[32m+[m[32m            <tr>[m
+[32m+[m[32m                <td>Viernes</td>[m
+[32m+[m[32m                <td>08h - 20h</td>[m
+[32m+[m[32m            </tr>[m
+[32m+[m[32m        </tbody>[m[41m    [m
+[32m+[m[32m    </table>[m
+[32m+[m[32m    </main>[m
+[32m+[m[41m    [m
+[32m+[m[32m    <footer>[m
+[32m+[m[32m        <img src="imagenes/logo-blanco.png">[m
+[32m+[m[32m        <p class="copyright">&copy Copyright Barbería Alura - 2020</p>[m
+[32m+[m[32m    </footer>[m
+[32m+[m
+[32m+[m[32m</body>[m
+[32m+[m[32m</html>[m
+\ No newline at end of file[m
+[1mdiff --git a/desktop.ini b/desktop.ini[m
+[1mnew file mode 100644[m
+[1mindex 0000000..bd28da3[m
+[1m--- /dev/null[m
+[1m+++ b/desktop.ini[m
+[36m@@ -0,0 +1,5 @@[m
+[32m+[m[32m[.ShellClassInfo][m
+[32m+[m[32mInfoTip=Esta pasta est� compartilhada on-line.[m
+[32m+[m[32mIconFile=C:\Program Files\Google\Drive\googledrivesync.exe[m
+[32m+[m[32mIconIndex=16[m
+[32m+[m[41m    [m
+\ No newline at end of file[m
+[1mdiff --git a/diferenciales/desktop.ini b/diferenciales/desktop.ini[m
+[1mnew file mode 100644[m
+[1mindex 0000000..bd28da3[m
+[1m--- /dev/null[m
+[1m+++ b/diferenciales/desktop.ini[m
+[36m@@ -0,0 +1,5 @@[m
+[32m+[m[32m[.ShellClassInfo][m
+[32m+[m[32mInfoTip=Esta pasta est� compartilhada on-line.[m
+[32m+[m[32mIconFile=C:\Program Files\Google\Drive\googledrivesync.exe[m
+[32m+[m[32mIconIndex=16[m
+[32m+[m[41m    [m
+\ No newline at end of file[m
+[1mdiff --git a/diferenciales/diferenciales.jpg b/diferenciales/diferenciales.jpg[m
+[1mnew file mode 100644[m
+[1mindex 0000000..5b15eec[m
+Binary files /dev/null and b/diferenciales/diferenciales.jpg differ
+[1mdiff --git a/imagenes/barba.jpg b/imagenes/barba.jpg[m
+[1mnew file mode 100644[m
+[1mindex 0000000..3151d86[m
+Binary files /dev/null and b/imagenes/barba.jpg differ
+[1mdiff --git a/imagenes/bg.jpg b/imagenes/bg.jpg[m
+[1mnew file mode 100644[m
+[1mindex 0000000..164742f[m
+Binary files /dev/null and b/imagenes/bg.jpg differ
+[1mdiff --git a/imagenes/cabello+barba.jpg b/imagenes/cabello+barba.jpg[m
+[1mnew file mode 100644[m
+[1mindex 0000000..1757568[m
+Binary files /dev/null and b/imagenes/cabello+barba.jpg differ
+[1mdiff --git a/imagenes/cabello.jpg b/imagenes/cabello.jpg[m
+[1mnew file mode 100644[m
+[1mindex 0000000..53a8538[m
+Binary files /dev/null and b/imagenes/cabello.jpg differ
+[1mdiff --git a/imagenes/desktop.ini b/imagenes/desktop.ini[m
+[1mnew file mode 100644[m
+[1mindex 0000000..bd28da3[m
+[1m--- /dev/null[m
+[1m+++ b/imagenes/desktop.ini[m
+[36m@@ -0,0 +1,5 @@[m
+[32m+[m[32m[.ShellClassInfo][m
+[32m+[m[32mInfoTip=Esta pasta est� compartilhada on-line.[m
+[32m+[m[32mIconFile=C:\Program Files\Google\Drive\googledrivesync.exe[m
+[32m+[m[32mIconIndex=16[m
+[32m+[m[41m    [m
+\ No newline at end of file[m
+[1mdiff --git a/imagenes/logo-blanco.png b/imagenes/logo-blanco.png[m
+[1mnew file mode 100644[m
+[1mindex 0000000..90d36a3[m
+Binary files /dev/null and b/imagenes/logo-blanco.png differ
+[1mdiff --git a/imagenes/logo.png b/imagenes/logo.png[m
+[1mnew file mode 100644[m
+[1mindex 0000000..34cfa69[m
+Binary files /dev/null and b/imagenes/logo.png differ
+[1mdiff --git a/imagenes/utensilios[1].jpg b/imagenes/utensilios[1].jpg[m
+[1mnew file mode 100644[m
+[1mindex 0000000..c77a3f0[m
+Binary files /dev/null and b/imagenes/utensilios[1].jpg differ
+[1mdiff --git a/index.html b/index.html[m
+[1mnew file mode 100644[m
+[1mindex 0000000..f42f471[m
+[1m--- /dev/null[m
+[1m+++ b/index.html[m
+[36m@@ -0,0 +1,92 @@[m
+[32m+[m[32m<!DOCTYPE html>[m
+[32m+[m
+[32m+[m[32m<html lang="es">[m
+[32m+[m[41m    [m
+[32m+[m[32m    <head>[m
+[32m+[m
+[32m+[m[32m        <meta charset="UTF-8">[m[41m [m
+[32m+[m[32m        <meta name="viewport" content="width=device-width, initial-scale=1.0">[m
+[32m+[m[32m        <title>Barbería Alura</title>[m
+[32m+[m[32m        <link rel="stylesheet" href="reset.css">[m
+[32m+[m[32m        <link rel="stylesheet" href="style.css">[m
+[32m+[m[32m        <link rel="preconnect" href="https://fonts.googleapis.com">[m
+[32m+[m[32m        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>[m
+[32m+[m[32m        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">[m
+[32m+[m[32m    </head>[m
+[32m+[m
+[32m+[m[32m    <body>[m
+[32m+[m
+[32m+[m[32m        <header>[m
+[32m+[m[32m            <div class="caja">[m
+[32m+[m[32m                <h1><img src="imagenes/logo.png"></h1>[m
+[32m+[m[32m                <nav>[m
+[32m+[m[32m                    <ul>[m
+[32m+[m[32m                        <li><a href="index.html">Home</a></li>[m
+[32m+[m[32m                        <li><a href="productos.html">Productos</a></li>[m
+[32m+[m[32m                        <li><a href="contacto.html">Contacto</a></li>[m
+[32m+[m[32m                    </ul>[m
+[32m+[m[32m                </nav>[m
+[32m+[m[32m            </div>[m
+[32m+[m[32m        </header>[m
+[32m+[m
+[32m+[m[32m        <img class="banner" src="banner/banner.jpg">[m
+[32m+[m[32m    <main>[m
+[32m+[m[32m        <section class="principal">[m
+[32m+[m
+[32m+[m[32m            <h2 class="titulo-principal">Sobre la Barbería Alura</h2>[m
+[32m+[m[32m            <img src="imagenes/utensilios[1].jpg" alt="barbero" class="utensilio">[m
+[32m+[m[32m            <p>Ubicada en el corazón de la ciudad, la <strong>Barbería Alura</strong> trae para el mercado lo que hay de mejor para su cabello[m[41m [m
+[32m+[m[32m                y barba. Fundada en 2020, la Barbería Alura ya es destaque en la ciudad y conquista nuevos clientes diariamente.</p>[m
+[32m+[m[32m            <p id="mision"><em>Nuestra misión es: <strong>"Proporcionar autoestima y calidad de vida a nuestros clientes"</strong>.</em></p>[m
+[32m+[m[32m            <p>Ofrecemos profesionales experimentados que están constantemente observando los cambios y movimiento en el mundo de la moda,[m
+[32m+[m[32m                 para así ofrecer a nuestros clientes las últimas tendencias. El atendimiento posee un padrón de excelencia y agilidad,[m
+[32m+[m[32m                  garantizando calidad y satisfacción de nuestros clientes.</p>[m[41m [m
+[32m+[m[41m            [m
+[32m+[m[32m        </section>[m
+[32m+[m[41m        [m
+[32m+[m[32m        <section class="mapa">[m
+[32m+[m[32m            <h3 class="titulo-principal">Nuestra ubicación</h3>[m
+[32m+[m[32m            <p>Nuestro establecimiento está ubicado en el corazón de la ciudad</p>[m
+[32m+[m
+[32m+[m[32m            <div class="mapa-contenido">[m
+[32m+[m[32m                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1606.7252745946244!2d-79.84272405769609!3d-6.777316917413615[m
+[32m+[m[32m                !2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x904cef26077[m
+[32m+[m[32m                ab807%3A0xf107afdcd0791c25!2sResidencial%20Bolognesi!5e[m
+[32m+[m[32m                0!3m2!1ses-419!2spe!4v1672334116206!5m2!1ses-419!2spe"[m
+[32m+[m[32m                width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy"[m
+[32m+[m[32m                referrerpolicy="no-referrer-when-downgrade"></iframe>[m
+[32m+[m[32m            </div>[m[41m   [m
+[32m+[m
+[32m+[m[32m        </section>[m
+[32m+[m
+[32m+[m[32m        <section class="diferenciales">[m
+[32m+[m
+[32m+[m[32m            <h2 class="titulo-principal">Diferenciales</h2>[m
+[32m+[m[41m            [m
+[32m+[m[32m        <div class="contenido-diferenciales">[m
+[32m+[m[41m        [m
+[32m+[m[32m            <ul class="lista-diferenciales">[m
+[32m+[m[32m                <li class="items">Atención personalizada a los clientes</li>[m
+[32m+[m[32m                <li class="items">Espacio diferenciado</li>[m
+[32m+[m[32m                <li class="items">Localización</li>[m
+[32m+[m[32m                <li class="items">Profesesionales calificados</li>[m
+[32m+[m[32m                <li class="items">Puntualidad</li>[m
+[32m+[m[32m                <li class="items">Limpieza</li>[m
+[32m+[m[32m            </ul><img src="diferenciales/diferenciales.jpg" class="imagen-diferenciales">[m
+[32m+[m
+[32m+[m[32m            <div class="video">[m
+[32m+[m[32m                <iframe width="100%" height="350" src="https://www.youtube.com/embed/mlsDek4rhK8"[m
+[32m+[m[32m             title="¡TRIUNFAZO DE LOS REDS ANTE UNOS VILLANS SIN DIBU MARTÍNEZ! | Aston Villa 1-3 Liverpool | RESUMEN"[m[41m [m
+[32m+[m[32m             frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>[m
+[32m+[m[32m            </div>[m
+[32m+[m[32m        </div>[m
+[32m+[m
+[32m+[m[32m        </section>[m
+[32m+[m
+[32m+[m[32m    </main>[m
+[32m+[m[32m        <footer>[m
+[32m+[m[32m            <img src="imagenes/logo-blanco.png">[m
+[32m+[m[32m            <p class="copyright">&copy Copyright Barbería Alura - 2020</p>[m
+[32m+[m[32m        </footer>[m
+[32m+[m[32m    </body>[m
+[32m+[m[32m</html>[m
+\ No newline at end of file[m
+[1mdiff --git a/productos.html b/productos.html[m
+[1mnew file mode 100644[m
+[1mindex 0000000..8c3011c[m
+[1m--- /dev/null[m
+[1m+++ b/productos.html[m
+[36m@@ -0,0 +1,52 @@[m
+[32m+[m[32m<!DOCTYPE html>[m
+[32m+[m
+[32m+[m[32m<html>[m
+[32m+[m[32m    <head>[m
+[32m+[m[32m        <meta charset="UTF-8">[m
+[32m+[m[32m        <title>Productos - Barbería Alura</title>[m
+[32m+[m[32m        <link rel="stylesheet" href="reset.css">[m
+[32m+[m[32m        <link rel="stylesheet" href="style.css">[m
+[32m+[m[32m    </head>[m
+[32m+[m[32m    <body>[m
+[32m+[m[32m        <header>[m
+[32m+[m[32m            <div class="caja">[m
+[32m+[m[32m                <h1><img src="imagenes/logo.png"></h1>[m
+[32m+[m[32m                <nav>[m
+[32m+[m[32m                    <ul>[m
+[32m+[m[32m                        <li><a href="index.html">Home</a></li>[m
+[32m+[m[32m                        <li><a href="productos.html">Produ
